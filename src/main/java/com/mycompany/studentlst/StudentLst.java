@@ -21,13 +21,16 @@ public class StudentLst {
         }
         System.out.println(printOutput(students));
     }
-    
+
     public static String printOutput(Student[] students){
-        String str="";
-        
-        //To Do 03: complete the implementation of this method  
-        
-        return str;
+        StringBuilder str= new StringBuilder();
+
+        //To Do 03: complete the implementation of this method
+        for (Student student : students) {
+            //System.out.println(students[i]);
+            str.append(student.getName()).append("\n");
+        }
+        return str.toString();
     }
     
     
